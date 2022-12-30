@@ -153,9 +153,9 @@ if __name__ == '__main__':
     # get server ip from terminal argument
     import sys
 
-    if len(sys.argv) > 1:
-        host = sys.argv[1]
-    if len(sys.argv) > 2:
-        port = sys.argv[2]
+    if len(sys.argv) == 1:
+        wsldUrl = sys.argv[1]
+    else:
+        print("please give the wsld url as argument")
 
     AtmApp().run()
