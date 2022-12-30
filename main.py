@@ -155,7 +155,7 @@ if __name__ == '__main__':
 
     if len(sys.argv) == 1:
         wsldUrl = sys.argv[1]
-    else:
+    elif len(sys.argv) >= 2:
         print("please give the wsld url as argument")
 
     AtmApp().run()
